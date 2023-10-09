@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style-register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="first-nav">
+            <a href="./index.html"><li>LearninGo</li></a>
+            <a href="./register.html"><li>Sign Up</li></a>
+        </ul>
+        <ul class="second-nav">
+            <a href="./index.html"><li class="home">Home</li></a>
+            <a href="./register.html"><li class="regi">Register</li></a>
+            <a href="./course.html"><li class="cour">Courses</li></a>
+            <a href="./teacher.html"><li class="tech">Teachers</li></a>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Fill out this form to apply for course</h1>
+        <div class="card">
+            <div class="container">
+                <form action="/form-handling-url" method="post">
+                    <fieldset>
+                    <legend>Register to LearninGo</legend>
+
+                    <div>
+                        <label for="firstName">First name</label>
+                        <input class="inp" type="text" id="firstName" name="first_name">
+                    </div>
+
+                    <div>
+                        <label for="lastName">Last name</label>
+                        <input class="inp" type="text" id="lastName" name="last_name">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email_address">
+                    </div>
+
+                    <div>
+                        <label for="status">Course</label>
+                        <select name="user_role_name" id="role">
+                            <option value="webDevelopment">Web development</option>
+                            <option value="frontEnd">Front-End</option>
+                            <option value="backEnd">Back-End</option>
+                            <option value="fullStack">Full Stack</option>
+                            <option value="java">Java</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="html">HTML</option>
+                            <option value="bootStrap">BootStrap</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="comments">Any thing else you would like to share</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+
+                    <div class="container">
+                        <input type="checkbox" id="signup" name="signup" value="Signup">
+                        <label for="signup">Sign up for news letter</label><br>
+                    </div>
+
+                    <div class="container">
+                        <input type="checkbox" id="terms" name="terms" value="Terms">
+                        <label for="terms"> Agree to terms and conditions</label>
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+
+                    </fieldset>
+                </form>
+            </div>
+          </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="footer-left">
+                <a href="">LearninGo</a>
+            </div>
+            <ul class="footer-right">
+                <li>Contact</li>
+                <li>About us</li>
+                <li>Terms of use</li>
+                <li>FAQ's</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <p>@Copyright 2020-2024 by Kefsnes Data. All Rights Reserved.<p>
+    </footer>
+</body>
+</html>
